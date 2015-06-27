@@ -2,12 +2,13 @@
 
 class silhouette::studio (
   $ensure  = 'present',
-  $version ='3.3.638'
+  $version = '3.3.638',
+  $cdn     = 'https://cdn.silhouetteamerica.com/m/s/ss/',
 ) {
   package { 'SilhouetteStudio':
     ensure   => $ensure,
     provider => 'appdmg',
-    source   => "https://cdn.silhouetteamerica.com/m/s/ss/silhouette-studio_v#{version}.dmg"
+    source   => "${cdn}/silhouette-studio_v${version}.dmg"
   }
 }
 
