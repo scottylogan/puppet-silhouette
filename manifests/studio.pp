@@ -3,7 +3,7 @@
 class silhouette::studio (
   $ensure  = 'present',
   $version = '3.3.638',
-  $cdn     = 'https://cdn.silhouetteamerica.com/m/s/ss/',
+  $cdn     = 'https://cdn.silhouetteamerica.com/m/s/ss',
 ) {
   package { 'SilhouetteStudio':
     ensure   => $ensure,
