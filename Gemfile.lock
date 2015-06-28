@@ -78,6 +78,3 @@ PLATFORMS
 
 DEPENDENCIES
   cardboard (~> 2.1)
-
-BUNDLED WITH
-   1.10.5
