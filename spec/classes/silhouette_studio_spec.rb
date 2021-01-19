@@ -1,16 +1,10 @@
 require 'spec_helper'
 
 describe "silhouette::studio" do
-  version = '3.3.638'
-  let(:params) {
-    {
-      :version => "#{version}"
-    }
-  }
   it do
     should contain_package("SilhouetteStudio").with({
-      :source   => "https://cdn.silhouetteamerica.com/m/s/ss/silhouette-studio_v#{version}.dmg",
-      :provider => 'appdmg'
+      :source   => 'https://dl.silhcdn.com/ce44dcad4c75e27f',
+      :provider => 'appdmg',
     })
   end
 end
